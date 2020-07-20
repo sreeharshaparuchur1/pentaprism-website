@@ -1,2 +1,2 @@
-# Photography Club Website
-Website for Photography Club, IIIT-H.
+# Pentaprism Website
+Website for Pentaprism, IIIT-H.
