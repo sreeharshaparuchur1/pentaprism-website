@@ -3,6 +3,7 @@
     background-color: white;
     transition-duration: .5s;
     border-radius: 6px;
+    min-height: 90px;
 }
 
 .navbar-brand span {

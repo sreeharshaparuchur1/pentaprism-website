@@ -4,7 +4,7 @@ html body {
 }
 
 #main-wrapper {
-    padding-top: 200px;
+    padding-top: 140px;
     opacity: 0;
     transition: ease 2s opacity;
     position: relative;
@@ -14,11 +14,14 @@ html body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("../images/bg-4.png");
+    background-image: url("../images/lens-490806.jpg");
     background-size: cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
+    background-position: center;
     /* background-repeat: no-repeat; */
-    min-height: 500px;
+    width: 92%;
+    min-height: 300px;
+    height: 40vh;
     border-radius: 5px;
     text-align: center;
 }
@@ -46,6 +49,6 @@ html body {
     position: relative;
     transition: ease 0.5s opacity;
     bottom: 0px;
-    height: 400px;
-    width: 400px;
+    width: 30vw;
+    max-width: 300px;
 }
