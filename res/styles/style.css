@@ -6,8 +6,16 @@
     min-height: 90px;
 }
 
+.navbar-brand {
+    max-width: 78%;
+}
+
 .navbar-brand span {
     font-size: 40px;
+}
+
+.navbar-toggler {
+    max-width: 20%;
 }
 
 .nav-item {

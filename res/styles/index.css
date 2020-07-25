@@ -18,10 +18,11 @@ html body {
     background-size: cover;
     /* background-attachment: fixed; */
     background-position: center;
-    /* background-repeat: no-repeat; */
+    background-repeat: no-repeat;
     width: 92%;
     min-height: 300px;
     height: 40vh;
+    max-height: 400px;
     border-radius: 5px;
     text-align: center;
 }
@@ -51,4 +52,19 @@ html body {
     bottom: 0px;
     width: 30vw;
     max-width: 300px;
+}
+
+@media (max-width:700px) {
+    #intro h1 {
+        font-size: 70px;
+    }
+}
+
+@media (max-width:600px) {
+    #intro h1 {
+        font-size: 50px;
+    }
+    #intro h3 {
+        font-size: 20px;
+    }
 }
