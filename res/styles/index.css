@@ -1,6 +1,9 @@
 html body {
-    background-color: white;
+    background: white;
+    
     transition: ease 2s background;
+    padding: 0;
+    margin: 0;
 }
 
 #main-wrapper {
@@ -25,6 +28,7 @@ html body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-color: white;
     border-radius: 6px;
     text-align: center;
 }
@@ -36,43 +40,115 @@ html body {
 }
 
 #page1 h1 {
-    font-size: max(12vw, 90px);
+    font-size: 12vw;
     font-family: "Lato ExtraBold"
 }
 
+#page1 h3 {
+    font-size: 2.5vw;
+    font-family: "lato bold";
+}
+
 #page2 {
-    /* padding-top: 130px; */
     font-family: "pt sans reg";
-    /* background-image: linear-gradient(0deg, rgb(88, 175, 247), rgb(245, 245, 245)); */
-    /* background-attachment: fixed; */
-    /* background-color: ; */
+    background: #1A2980;
+    background: -webkit-linear-gradient(to right, #26D0CE, #1A2980);
+    background: linear-gradient(-175deg, #3ed2ff, #7244df);
+    background-attachment: fixed;
+
 }
 
 #page2 h1 {
-    color: white;
+    /* color: rgb(0, 21, 48); */
+    color: rgb(0, 15, 36);
     text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
     font-family: "Lato ExtraBold";
+    font-size: 70px;
+    text-align: right;
+}
+
+#left-section h1 {
+    /* font-size: 80px; */
+    text-align: left;
 }
 
 #page2 .section {
     height: 80vh;
-    border-radius: 6px;
+    padding: 7.5% 7.5%;
     background-size: cover;
     background-position: center;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.699);
 }
 
-#info {
-    background-image: url("../images/bg-8.jpg");
+#left-section {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top: solid 8px rgb(255, 255, 255);
+    border-right: solid 8px rgb(255, 255, 255);
+    border-bottom: solid 8px rgb(255, 255, 255);
+    border-left: transparent;
+    /* background-image: url("../images/bg-8.jpg"); */
 }
 
-#photo-of-the-month {
-    background-image: url("../images/bg-7.jpg");
+#right-section {
+    /* background-image: url("../images/bg-7.jpg"); */
+    border-top: solid 8px rgb(255, 255, 255);
+    border-left: solid 8px rgb(255, 255, 255);
+    border-bottom: solid 8px rgb(255, 255, 255);
+    border-right: transparent;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#page3 .heading {
+    color: white;
+    background-color: rgb(0, 15, 37);
+    /* color: black; */
+    text-align: center;
+    width: 100%;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+    font-family: "Lato ExtraBold";
+    font-size: 4vw;
+}
+
+#ceye-past-carousel {
+    max-height: 80vh;
+    font-family: "Lato Extrabold";
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+  }  
+
+
+.carousel-item {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+
+#img1 {
+    background-image: url('../images/c-eye-past-winners/june.jpeg');
+}
+
+#img2 {
+    background-image: url('../images/c-eye-past-winners/may.jpg');
 }
 
 #page2 .event-card {
+    display: table;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
     border-radius: 6px;
-    background-color: white;
+    min-height: 100px;
+    font-size: 0.75rem;
+    background-color: rgb(255, 255, 255);
+}
+
+#page2 .event-card div {
+    display: table-cell;
+    vertical-align: middle;
 }
 
 #camera-gif-figure {
@@ -80,7 +156,6 @@ html body {
     z-index: -100;
     opacity: 0;
     width: 100vw;
-    /* height: 300px; */
 }
 
 #camera-gif {
