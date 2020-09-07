@@ -73,7 +73,6 @@ html body {
 }
 
 #page2 .section {
-    height: 80vh;
     padding: 7.5% 7.5%;
     background-size: cover;
     background-position: center;
@@ -169,6 +168,17 @@ html body {
 @media (min-width:1200px) {
     #page2 {
         height: 100vh;
+    }
+
+    #page2 .section {
+        height: 80vh;
+    }
+}
+
+@media (max-width:1200px) {
+
+    #right-section {
+        min-height: 700px;
     }
 }
 /*
