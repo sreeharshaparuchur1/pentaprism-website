@@ -1,15 +1,15 @@
-*{
+#main-wrapper *{
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
     padding: auto;
-    box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html{
+	font-size: 10px;
+	font-family: "Roboto", sans-sans-serif;
   }
-  
-  html{
-    font-size: 10px;
-    font-family: "Roboto", sans-sans-serif;
-  }
-  
+
   a{
     text-decoration: none;
     color: #fff;
@@ -22,7 +22,7 @@
   
   .heading{
     text-transform: uppercase;
-    font-size: 3.5rem;
+    font-size: 5rem;
     letter-spacing: 3px;
     margin-right: -3px;
     margin-bottom: 5rem;
