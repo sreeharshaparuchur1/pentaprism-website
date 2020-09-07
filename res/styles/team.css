@@ -1,15 +1,15 @@
-*{
+#main-wrapper *{
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
     padding: auto;
-    box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html{
+	font-size: 10px;
+	font-family: "Roboto", sans-sans-serif;
   }
-  
-  html{
-    font-size: 10px;
-    font-family: "Roboto", sans-sans-serif;
-  }
-  
+
   a{
     text-decoration: none;
     color: #fff;
