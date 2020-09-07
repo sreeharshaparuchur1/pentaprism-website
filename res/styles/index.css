@@ -165,6 +165,10 @@ html body {
     max-width: 300px;
 }
 
+iframe {
+    width: 500px;
+}
+
 @media (min-width:1200px) {
     #page2 {
         height: 100vh;
@@ -179,6 +183,12 @@ html body {
 
     #right-section {
         min-height: 700px;
+    }
+}
+
+@media (max-width:500px) {
+    iframe {
+        width: 95vw;
     }
 }
 /*
