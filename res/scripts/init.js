@@ -5,6 +5,7 @@
 })(jQuery);
 
 function init() {
+    // document.getElementById("logo-figure").style.opacity = '0';
     $("#camera-gif-figure").animate({
         // width and max-width have to be changed accordingly in index.css > #camera-gif
         top: String(0.5 * $(window).height() - (Math.min(0.15 * $(window).width(), 150))) + "px",
@@ -17,7 +18,6 @@ function init() {
     
     setTimeout(() => {
         document.getElementById("camera-gif-figure").style.opacity = '0';
-        document.getElementById("main-wrapper").style.opacity = '1';
-        document.getElementsByTagName("body")[0].style.backgroundColor = "whitesmoke";
+        document.location.href = "./home.html"
     }, 2500);
 }
