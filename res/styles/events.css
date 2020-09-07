@@ -31,8 +31,9 @@ body {
 }
 
 .event-box .nav-item {
-    width: 20%;
+    min-width: 20%;
     text-align: center;
+    font-size: medium;
 }
 
 .event-box .nav-item {
