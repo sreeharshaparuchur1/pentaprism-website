@@ -18,6 +18,9 @@ function init() {
     
     setTimeout(() => {
         document.getElementById("camera-gif-figure").style.opacity = '0';
-        document.location.href = "./home.html"
     }, 2500);
+
+    setTimeout(() => {
+        document.location.href = "./home.html"
+    }, 3000);
 }
