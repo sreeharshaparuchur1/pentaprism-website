@@ -189,6 +189,14 @@ html body {
     background-color: rgb(255, 255, 255);
 }
 
+#page2 .event-heading {
+    font-family: "lato extrabold";
+}
+
+#page2 .event-card p {
+    font-size: medium;
+}
+
 #page2 .event-card div {
     display: table-cell;
     vertical-align: middle;
