@@ -178,6 +178,25 @@ html, body {
     align-content: center;  */
 }
 
+#img5 {
+    background-image: url('../images/c-eye-past-winners/Jalpreet_July.jpg');
+    /*  max-width: 100%;
+    border: 1px solid red;
+    max-width: 1200px;
+    max-height: 60%;
+    height: auto;
+    align-content: center;  */
+}
+#img6 {
+    background-image: url('../images/c-eye-past-winners/August_Brijesh.jpg');
+    /*  max-width: 100%;
+    border: 1px solid red;
+    max-width: 1200px;
+    max-height: 60%;
+    height: auto;
+    align-content: center;  */
+}
+
 
 #page2 .event-card {
     display: table;
