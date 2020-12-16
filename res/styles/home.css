@@ -65,12 +65,12 @@ html, body {
     text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
     font-family: "Lato ExtraBold";
     font-size: 70px;
-    text-align: right;
+    text-align: center;
 }
 
 #left-section h1 {
     /* font-size: 80px; */
-    text-align: left;
+    text-align: center;
 }
 
 #page2 .section {
@@ -88,6 +88,9 @@ html, body {
     border-bottom: solid 8px rgb(255, 255, 255);
     border-left: transparent;
     height: 100%;
+    border-left: solid 8px rgb(255, 255, 255);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
     /* background-image: url("../images/bg-8.jpg"); */
 }
 
@@ -263,7 +266,7 @@ html, body {
     #page2 h1 {
         font-size: 50px;
     }
-    
+
 }
 
 @media (max-width:940px) {
@@ -271,7 +274,7 @@ html, body {
         font-size: 15vw;
         font-family: "Lato ExtraBold"
     }
-    
+
     #page1 h3 {
         font-size: 3.5vw;
         font-family: "lato bold";
