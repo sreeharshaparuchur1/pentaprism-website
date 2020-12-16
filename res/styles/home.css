@@ -5,6 +5,7 @@ html, body {
     margin: 0;
     max-width: 100%;
     overflow-x: auto;
+    font-size: 10px;
 }
 
 #main-wrapper {
@@ -26,12 +27,16 @@ html, body {
     align-items: center;
     height: 100vh;
     background-image: url("../images/bg-3.png");
-    background-size: cover;
+    background-size: 1800px 1100px;
     background-position: center;
     background-repeat: no-repeat;
     background-color: white;
     border-radius: 6px;
     text-align: center;
+    /*background: #1A2980;*/
+    /*background: -webkit-linear-gradient(to right, #26D0CE, #1A2980);*/
+    /*background: linear-gradient(-175deg, #3ed2ff, #7244df);*/
+    /*background: linear-gradient(-175deg, #fff, #3BB9FF);*/
 }
 
 #page1 div {
@@ -41,12 +46,12 @@ html, body {
 }
 
 #page1 h1 {
-    font-size: 12vw;
+    font-size: 10vw;
     font-family: "Lato ExtraBold"
 }
 
 #page1 h3 {
-    font-size: 2.5vw;
+    font-size: 2vw;
     font-family: "lato bold";
 }
 
@@ -54,7 +59,8 @@ html, body {
     font-family: "pt sans reg";
     background: #1A2980;
     background: -webkit-linear-gradient(to right, #26D0CE, #1A2980);
-    background: linear-gradient(-175deg, #3ed2ff, #7244df);
+    /*background: linear-gradient(-175deg, #3ed2ff, #7244df);*/
+    background: linear-gradient(-175deg, #fff, #3BB9FF);
     background-attachment: fixed;
 
 }
@@ -63,14 +69,38 @@ html, body {
     /* color: rgb(0, 21, 48); */
     color: rgb(0, 15, 36);
     text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
-    font-family: "Lato ExtraBold";
-    font-size: 70px;
+    font-family: "Lato";
+    font-size: 100px;
     text-align: right;
 }
 
 #left-section h1 {
     /* font-size: 80px; */
-    text-align: left;
+    font-size: 10px;
+    text-align: center;
+}
+
+#left-section .heading{
+  text-transform: uppercase;
+  font-size: 5rem;
+  letter-spacing: 3px;
+  margin-right: -3px;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: #333;
+  position: relative;
+}
+
+#left-section .heading::after{
+  content: "  ";
+  width: 20rem;
+  height: .8rem;
+  background-color: #ffe033;
+  position: absolute;
+  bottom: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2rem
 }
 
 #page2 .section {
@@ -88,17 +118,24 @@ html, body {
     border-bottom: solid 8px rgb(255, 255, 255);
     border-left: transparent;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-left: solid 8px rgb(255, 255, 255);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
     /* background-image: url("../images/bg-8.jpg"); */
 }
+
 
 #right-section {
     /* background-image: url("../images/bg-7.jpg"); */
     border-top: solid 8px rgb(255, 255, 255);
     border-left: solid 8px rgb(255, 255, 255);
-    border-bottom: solid 8px rgb(255, 255, 255);
-    border-right: transparent;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    border-bottom: solid 8px rgb(255, 255, 255);
+    border-right: transparent;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -111,13 +148,16 @@ html, body {
     text-align: center;
     width: 100%;
     text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
-    font-family: "Lato ExtraBold";
+    font-family: "Lato Bold";
     font-size: 4vw;
+    background: -webkit-linear-gradient(to right, #26D0CE, #1A2980);
+    /*background: linear-gradient(-175deg, #3ed2ff, #7244df);*/
+    background: linear-gradient(-175deg, #3BB9FF, #000);
 }
 
 #ceye-past-carousel {
     max-height: 80vh;
-    font-family: "Lato Extrabold";
+    font-family: "Lato";
     text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
   }
 
@@ -263,7 +303,7 @@ html, body {
     #page2 h1 {
         font-size: 50px;
     }
-    
+
 }
 
 @media (max-width:940px) {
@@ -271,7 +311,7 @@ html, body {
         font-size: 15vw;
         font-family: "Lato ExtraBold"
     }
-    
+
     #page1 h3 {
         font-size: 3.5vw;
         font-family: "lato bold";
