@@ -101,6 +101,7 @@ html, body {
   left: 50%;
   transform: translateX(-50%);
   border-radius: 2rem
+  width: 80vh;
 }
 
 #page2 .section {
