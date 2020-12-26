@@ -156,16 +156,16 @@
 			<div class="col-12 m-0 p-0">
 				<div class="carousel slide" id="ceye-past-carousel" data-ride="carousel">
 					<ol class="carousel-indicators">
-						<li data-target="#ceye-past-carousel" data-slide-to="0" class="active"></li>
+<!-- 						<li data-target="#ceye-past-carousel" data-slide-to="0" class="active"></li>
 						<li data-target="#ceye-past-carousel" data-slide-to="1"></li>
 						<li data-target="#ceye-past-carousel" data-slide-to="2"></li>
 						<li data-target="#ceye-past-carousel" data-slide-to="3"></li>
 						<li data-target="#ceye-past-carousel" data-slide-to="4"></li>
-						<li data-target="#ceye-past-carousel" data-slide-to="5"></li>
+						<li data-target="#ceye-past-carousel" data-slide-to="5"></li> -->
 					</ol>
 
 					<div class="carousel-inner">
-						<div class="carousel-item active" id="img6">
+						<!-- <div class="carousel-item active" id="img6">
 							<div class="carousel-caption d-none d-md-block">
 								<h2>"There is no light at the end of the tunnel. There is only you. You are the light."</h2>
 								<h3>by Brijesh Singh</h3>
@@ -206,8 +206,58 @@
 								<h3>by Sai Vineesh C</h3>
 								<p>Month: March'20</p>
 							</div>
-						</div>
+						</div> -->
 					</div>
+					<script src="imageDetails.js"></script>
+					<script>
+						// Adding carousel indicators
+						let carouselIndicators = document.getElementsByClassName("carousel-indicators")[0];
+						let numItems = imageDetails.length;
+
+						for (let i = 0; i < numItems; i++) {
+							let indicator = document.createElement("li");
+							indicator.setAttribute("data-target", "#ceye-past-carousel"); 
+							indicator.setAttribute("data-slide-to", String(i));
+							if (i == 0)
+								indicator.className = "active"; 
+							carouselIndicators.appendChild(indicator);
+						}
+
+
+						// Adding carousel items
+						let carouselItems = document.getElementsByClassName("carousel-inner")[0];
+
+						for (let i = 0; i < numItems; i++) {
+							let item = document.createElement("div");
+							if (i == 0)
+								item.className = "carousel-item active";
+							else
+								item.className = "carousel-item";
+							item.style.backgroundImage = "url('" + imageDetails[i].url + "')";
+
+							let caption = document.createElement("h2");
+							let ct = document.createTextNode('"' + imageDetails[i].caption + '"')
+							caption.appendChild(ct);
+
+							let author = document.createElement("h3");
+							let at = document.createTextNode("by " + imageDetails[i].author); 
+							author.appendChild(at);
+
+							let month = document.createElement("p");
+							let mt = document.createTextNode("Month: " + imageDetails[i].month); 
+							month.appendChild(mt);
+
+							let subitem = document.createElement("div");
+							subitem. className = "carousel-caption d-none d-md-block"; 
+							subitem.appendChild(caption);
+							subitem.appendChild(author);
+							subitem.appendChild(month);
+
+							item.appendChild(subitem); 
+
+							carouselItems.appendChild(item);
+						}
+					</script>
 
 					<a href="#ceye-past-carousel" class="carousel-control-prev" data-slide="prev">
 						<span class="carousel-control-prev-icon"></span>
